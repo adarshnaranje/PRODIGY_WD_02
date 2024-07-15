@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch with Laps</title>
+  <!-- Link to external CSS file for styling the stopwatch -->
+  <link rel="stylesheet" href="stopwatch.css">
+</head>
+<body>
+  <form class="container">
+    <!-- Radio button for initializing the stopwatch -->
+    <input type="radio" id="init" name="control" checked="checked">
+    <!-- Radio button for stopping the stopwatch -->
+    <input type="radio" id="stop" name="control">
+    <!-- Radio button for starting the stopwatch -->
+    <input type="radio" id="start" name="control">
+    <!-- Reset button for resetting the stopwatch -->
+    <input type="reset" id="reset" name="control">
+    <!-- Checkboxes for recording laps -->
+    <input type="checkbox" id="lap_1" name="lap">
+    <input type="checkbox" id="lap_2" name="lap">
+    <input type="checkbox" id="lap_3" name="lap">
+    <input type="checkbox" id="lap_4" name="lap">
+
+    <!-- Display area for the main time -->
+    <time class="main-time">
+      <!-- Time components: Hours, Minutes, Seconds -->
+      <i></i><b></b><i></i><b></b><i></i>
+    </time>
+
+    <!-- Control buttons for the stopwatch -->
+    <div class="controls">
+      <!-- Stop button -->
+      <label for="stop">Stop</label>
+      <!-- Start button -->
+      <label for="start">Start</label>
+      <!-- Reset button -->
+      <label for="reset">Reset</label>
+      <!-- Lap buttons -->
+      <label for="lap_1">Lap</label>
+      <label for="lap_2">Lap</label>
+      <label for="lap_3">Lap</label>
+      <label for="lap_4">Lap</label>
+    </div>
+
+    <!-- List of laps -->
+    <ul class="laps">
+      <li>
+        <!-- Time display for each lap -->
+        <time>
+          <!-- Time components: Hours, Minutes, Seconds -->
+          <i></i><b></b><i></i><b></b><i></i>
+        </time>
+      </li>
+      <li>
+        <time>
+          <i></i><b></b><i></i><b></b><i></i>
+        </time>
+      </li>
+      <li>
+        <time>
+          <i></i><b></b><i></i><b></b><i></i>
+        </time>
+      </li>
+      <li>
+        <time>
+          <i></i><b></b><i></i><b></b><i></i>
+        </time>
+      </li>
+    </ul>
+  </form>
+</body>
+</html>
